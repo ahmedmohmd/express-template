@@ -10,7 +10,13 @@ export default [
 	...tseslint.configs.recommended,
 	eslintConfigPrettier,
 	{
-		ignores: ["eslint.config.mjs", "vitest.config.mjs", "html", "logs", "coverage"],
+		ignores: [
+			"eslint.config.mjs",
+			"vitest.config.mjs",
+			"html",
+			"logs",
+			"coverage",
+		],
 	},
 
 	// My Custom Rules
