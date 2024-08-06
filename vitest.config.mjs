@@ -4,6 +4,6 @@ export default defineConfig({
 	test: {
 		watch: true,
 		root: ".",
-		reporters: ["html", "basic"]
+		reporters: ["html", "basic"],
 	},
 });

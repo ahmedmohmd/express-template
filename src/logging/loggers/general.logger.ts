@@ -4,4 +4,3 @@ import { createCustomLogger } from "./custom.logger";
 const generalLogger = createCustomLogger("general", LogLevel.INFO);
 
 export { generalLogger };
-
