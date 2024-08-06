@@ -18,7 +18,7 @@ describe("validateRequestBody()", () => {
 		});
 	});
 
-	it.only("Should throw an Error if is not Valid.", () => {
+	it("Should throw an Error if is not Valid.", () => {
 		const validationResult = validateRequestBody(fakeSchema);
 		const middlewareResult = () =>
 			validationResult(fakeRequest, fakeResponse, fakeNextFunction);
