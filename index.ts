@@ -1,4 +1,5 @@
 import express from "express";
+import "express-async-errors";
 import { config } from "./config/config";
 import { ENV } from "./config/env";
 import bootstrap from "./src/bootstrap";
