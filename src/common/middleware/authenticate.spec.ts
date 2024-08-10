@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from "express";
 import createHttpError from "http-errors";
 import { beforeEach, describe, expect, it, vi } from "vitest";
-import { authenticate } from "./authenticate.middleware";
+import { authenticate } from "./authenticate";
 
 vi.mock("../../logging", () => ({
 	default: {

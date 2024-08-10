@@ -9,7 +9,7 @@ const globalErrorHandler: ErrorRequestHandler = (err, req, res, next) => {
 
 	if (createHttpError.isHttpError(err)) {
 		return res.status(err.statusCode).json({
-			errors: JSON.parse(err.message),
+			errors: err.message,
 			success: false,
 			status: err.statusCode,
 		});
